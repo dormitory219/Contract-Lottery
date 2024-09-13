@@ -160,3 +160,15 @@ So, then you have two options:
 1. That is an official repo maintained by the same org
 2. It downloads from the official release cycle `chainlink/contracts` use (npm) and packages it nicely for digestion from foundry.
 
+
+  ### Sepolia 部署    
+  - Lottery contract: 彩票合约地址 https://sepolia.etherscan.io/address/0x492229573b8ed1d0b4359a313063ff5874d3302f#code
+  - Subscriptions:  合约订阅者，支付每次 chainlink vrf 请求的费用，绑定对应的 Consumer，即上面的合约地址；
+      https://vrf.chain.link/#/side-drawer/subscription/74000974915501833000744359976579519231207392506086965862145067332733734505004
+[图片]
+  - Automation:  
+  自动执行者 KeepersVRFConsumer，通过 subscriptionId 绑定对应的 Subscription，自动执行合约特定方法
+
+  https://automation.chain.link/sepolia/104268704862447039352343178255408218057384094298349666539569562343359873506507
+          
+[图片]
